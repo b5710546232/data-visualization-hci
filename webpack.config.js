@@ -22,6 +22,7 @@ module.exports = {
         loader: 'babel-loader',
         exclude: /node_modules/
       },
+      { test: /\.csv$/, loader: 'csv-loader' },
       {
         test: /\.(png|jpg|gif|svg)$/,
         loader: 'file-loader',

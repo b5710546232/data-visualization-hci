@@ -11,6 +11,9 @@
   "dependencies": {
     "bulma": "^0.2.3",
     "c3": "^0.4.11",
+    "csv-loader": "^2.0.1",
+    "d3": "^4.4.0",
+    "scroll-to-element": "^2.0.0",
     "vue": "^2.1.0"
   },
   "devDependencies": {

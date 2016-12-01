@@ -7,19 +7,29 @@
         </nav>
         <nav class="nav has-shadow">
             <div class="nav-center is-active">
-                <div class="nav-item sub-menu "><a href="">Graph1</a></div>
-                <div class="nav-item sub-menu "><a href="">Graph1</a></div>
-                <div class="nav-item sub-menu "><a href="">Graph1</a></div>
+                <a class="nav-item sub-menu" href="#" @click="scollTo('#movie')" >Movie</a>
+                <a class="nav-item sub-menu" href="#" @click="scollTo('#reviewer')" >Reviewer</a>
+                <a class="nav-item sub-menu" href="#" @click="scollTo('#trend')" >Trend</a>
+                <a class="nav-item sub-menu" href="#" @click="scollTo('#reference')" >Reference</a>
+                <a class="nav-item sub-menu" href="#" @click="scollTo('#member')" >Member</a>
             </div>
         </nav>
 </template>
 <script>
+import scrollToElement from 'scroll-to-element'
 export default {
   data(){
     return {}
   },
   methods:{
-
+ scollTo(e){
+      event.preventDefault()
+      scrollToElement(e, {
+        offset: 0,
+        ease: 'outBack',
+        duration: 500
+      })
+    },
   },
   components:{}
   

@@ -1,20 +1,25 @@
 <template>
     <div>
-        <section class="section  is-large">
-         <div class="container">
-      <div class="heading">
-        <h1 class="title">Section</h1>
-        <h2 class="subtitle">
-          A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
-        </h2>
-        <div id="pie"></div>
-      </div>
-    </div>
+        <section class="section  is-mobile is-medium">
+            <div class="container">
+                <div class="heading">
+                    <h1 class="title">Movie Category</h1>
+                    <h2 class="subtitle">
+                        Pie chart show the movie of each category in percentage.
+                    </h2>
+                    <div id="pie"></div>
+                </div>
+                <div class="columns is-pulled-right">
+                   <TopButton></TopButton>
+                </div>
+                <!--<div id="pie"></div>-->
+            </div>
         </section>
     </div>
 </template>
 <script>
 import c3 from 'c3'
+import TopButton from './TopButton.vue'
 export default {
     data () {
         return {}
@@ -26,20 +31,38 @@ export default {
             data: {
                 // iris data from R
                 columns: [
-                    ['data1', 30],
-                    ['data2', 120],
+                ['Action',25589],
+                ['Adventure',13753],
+                ['Animation',3605],
+                ['Children.s',7182],
+                ['Comedy',29832],
+                ['Crime',8055],
+                ['Documentary',758],
+                ['Drama',39895],
+                ['Fantasy',1352],
+                ['Film-Noir',1733],
+                ['Horror',5317],
+                ['Musical',4954],
+                ['Mystery',5245],
+                ['Romance',19461],
+                ['Sci-Fi',12730],
+                ['Thriller',21872],
+                ['War',9398],
+                ['Western',1854]
                 ],
             type : 'pie',
-            onclick: function (d, i) { console.log("onclick", d, i); },
-            onmouseover: function (d, i) { console.log("onmouseover", d, i); },
-            onmouseout: function (d, i) { console.log("onmouseout", d, i); }
+            onclick:  (d, i)=> { console.log("onclick", d, i); },
+            onmouseover:  (d, i)=> { console.log("onmouseover", d, i); },
+            onmouseout:  (d, i) => { console.log("onmouseout", d, i); }
     }
 })
     },
     methods: {},
-    components: {}
+    components: {TopButton}
 }
 </script>
 <style scoped>
-
+    #pie {
+        letter-spacing: 0px;
+    }
 </style>
