@@ -19,6 +19,7 @@
     </div>
 </template>
 <script>
+import TopButton from './TopButton.vue'
 export default {
     data () {
         return {}
@@ -26,7 +27,7 @@ export default {
     computed: {},
     mounted () {},
     methods: {},
-    components: {}
+    components: {TopButton}
 }
 </script>
 <style scoped>

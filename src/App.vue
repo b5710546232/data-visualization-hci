@@ -8,6 +8,7 @@
     <!--<SectionSplineChart></SectionSplineChart>-->
     <SectionBubble id="trend"></SectionBubble>
     <SectionBarChart></SectionBarChart>
+    <SectionMutiBarChart></SectionMutiBarChart>
     <SectionReference id="reference"></SectionReference>
     <SectionMember id="member"></SectionMember>
   </div>
@@ -23,6 +24,7 @@ import SectionBubble from './components/SectionBubble.vue'
 import Navbar from './components/Navbar.vue'
 import SectionReference from './components/SectionReference.vue'
 import SectionMember from './components/SectionMember.vue'
+import SectionMutiBarChart from './components/SectionMutiBarChart.vue'
 export default {
   name: 'app',
   data () {
@@ -39,7 +41,8 @@ export default {
     SectionStackBarChart,
     SectionIntro,
     SectionReference,
-    SectionMember
+    SectionMember,
+    SectionMutiBarChart
   }
 }
 </script>

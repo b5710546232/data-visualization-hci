@@ -7,7 +7,7 @@
                     <h2 class="subtitle">
                         Bar chart represent the <strong>average</strong> rating of reviewer in each movie's category
                     </h2>
-                    <div id="bar-chart"></div>
+                    <div id="bar-mutichart"></div>
                 </div>
                 <div class="columns is-pulled-right">
                    <TopButton></TopButton>
@@ -26,13 +26,13 @@ export default {
     computed: {},
     mounted () {
         var chart = c3.generate({
-            bindto: '#bar-chart',
+            bindto: '#bar-mutichart',
     data: {
        x:'x',
         columns: [
-            ['x', 'Action', 'Adventure', 'Animation', 'Children.s', 'Comedy', 'Crime', 'Documentary', 'Drama', 'Fantasy', 'Film-Noir', 'Horror', 'Musical', 'Mystery', 'Romance', 'Sci-Fi ' ],
-            ['category', 3.480245, 3.503527, 3.576699, 3.353244, 3.394073, 3.632278, 3.632278, 3.687379, 3.215237, 3.921523, 3.290389, 3.521397, 3.638132, 3.621705, 3.560723 ]
-            // ['category2', 3.480245, 3.503527, 3.576699, 3.353244, 3.394073, 3.632278, 3.632278, 3.687379, 3.215237, 3.921523, 3.290389, 3.521397, 3.638132, 3.621705, 3.560723 ]
+            ['x', 'Action', 'Adventure', 'Animation', 'Children\'s', 'Comedy', 'Crime', 'Documentary', 'Drama', 'Fantasy', 'Film-Noir', 'Horror', 'Musical', 'Mystery', 'Romance', 'Sci-Fi ' ],
+            ['male',2.920927442 ,4.275773486 ,1.679906539 ,3.837567704 ,1.078777656 ,1.604448166 ,1.704852842 ,1.979531099 ,2.096718504 ,3.815091357 ,0.278452074 ,2.368185644 ,4.220674838 ,2.733471757 ,0.049480587 ,4.093480579 ,3.154727023 ,2.000734903],
+            ['female',0.818759896 ,0.811598335 ,2.942484596 ,2.925595112 ,1.875717533 ,1.062512603 ,0.126388299 ,4.122669215 ,0.759184578 ,1.456663319 ,4.005725188 ,3.104783839 ,0.870624599 ,3.763688881 ,3.118947302 ,3.274510066 ,2.970337899 ,3.539560186]
         ],
         type: 'bar'
     },
@@ -52,7 +52,7 @@ export default {
 }
 </script>
 <style scoped>
-    #bar-chart {
+    #bar-mutichart {
         letter-spacing: 0px;
     }
 
