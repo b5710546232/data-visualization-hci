@@ -722,9 +722,19 @@ builtin-status-codes@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/builtin-status-codes/-/builtin-status-codes-2.0.0.tgz#6f22003baacf003ccd287afe6872151fddc58579"
 
+bulma@^0.2.3:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/bulma/-/bulma-0.2.3.tgz#086394c65e74aa8081e658bdcf6742f81107936e"
+
 bytes@2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/bytes/-/bytes-2.3.0.tgz#d5b680a165b6201739acb611542aabc2d8ceb070"
+
+c3@^0.4.11:
+  version "0.4.11"
+  resolved "https://registry.yarnpkg.com/c3/-/c3-0.4.11.tgz#3f2b6c7bd33577a3473dd61176735565b4d0f3ce"
+  dependencies:
+    d3 "~3.5.0"
 
 camelcase@^1.0.2:
   version "1.2.1"
@@ -1085,6 +1095,10 @@ csso@~2.2.1:
   dependencies:
     clap "^1.0.9"
     source-map "^0.5.3"
+
+d3@~3.5.0:
+  version "3.5.17"
+  resolved "https://registry.yarnpkg.com/d3/-/d3-3.5.17.tgz#bc46748004378b21a360c9fc7cf5231790762fb8"
 
 dashdash@^1.12.0:
   version "1.14.1"
