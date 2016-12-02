@@ -10,6 +10,9 @@
     <SectionBarChart></SectionBarChart>
     <SectionMutiBarChart></SectionMutiBarChart>
     <SectionLineChart></SectionLineChart>
+    <SectionLineChart2></SectionLineChart2>
+    <SectionLineChart3></SectionLineChart3>
+    <SectionLineChart4></SectionLineChart4>
     <SectionReference id="reference"></SectionReference>
     <SectionMember id="member"></SectionMember>
   </div>
@@ -27,6 +30,9 @@ import SectionReference from './components/SectionReference.vue'
 import SectionMember from './components/SectionMember.vue'
 import SectionMutiBarChart from './components/SectionMutiBarChart.vue'
 import SectionLineChart from './components/SectionLineChart.vue'
+import SectionLineChart2 from './components/SectionLineChart2.vue'
+import SectionLineChart3 from './components/SectionLineChart3.vue'
+import SectionLineChart4 from './components/SectionLineChart4.vue'
 export default {
   name: 'app',
   data () {
@@ -45,7 +51,11 @@ export default {
     SectionReference,
     SectionMember,
     SectionMutiBarChart,
-    SectionLineChart
+    SectionLineChart,
+    SectionLineChart2,
+    SectionLineChart3,
+    SectionLineChart4
+
   }
 }
 </script>
