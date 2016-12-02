@@ -22,20 +22,23 @@
 </template>
 <script>
 import c3 from 'c3'
+import csv_result from './csv/avg.csv'
 import TopButton from './TopButton.vue'
+console.log('csv',csv_result[0]);
+
 export default {
     data () {
         return {}
     },
     computed: {},
-    mounted () {
+    mounted () {            
         var chart = c3.generate({
             bindto: '#bar-chart',
     data: {
        x:'x',
         columns: [
-            ['x', 'Action', 'Adventure', 'Animation', 'Children.s', 'Comedy', 'Crime', 'Documentary', 'Drama', 'Fantasy', 'Film-Noir', 'Horror', 'Musical', 'Mystery', 'Romance', 'Sci-Fi ' ],
-            ['rating', 3.480245, 3.503527, 3.576699, 3.353244, 3.394073, 3.632278, 3.632278, 3.687379, 3.215237, 3.921523, 3.290389, 3.521397, 3.638132, 3.621705, 3.560723 ]
+            csv_result[0],
+            csv_result[1]
             // ['category2', 3.480245, 3.503527, 3.576699, 3.353244, 3.394073, 3.632278, 3.632278, 3.687379, 3.215237, 3.921523, 3.290389, 3.521397, 3.638132, 3.621705, 3.560723 ]
         ],
         type: 'bar'
@@ -46,8 +49,13 @@ export default {
             ratio: 0.5 // this makes bar width 50% of length between ticks
         }
     },
-    axis:{x:{type:'category',show:true}},
-});
+    axis:{
+        x:{type:'category',show:true},
+         y: {
+            label: 'rating'
+        },
+    },
+})
     },
     methods: {},
     components: {

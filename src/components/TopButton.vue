@@ -3,7 +3,7 @@
         <a href="#" @click="scollTo('#my-navbar')" >
             <span>
                                 <span class="columns">
-                                    <i class="fa fa-arrow-up fa-5x"></i>
+                                    <i class="fa fa-arrow-up fa-4x"></i>
                                 </span>
             <span class="columns is-centered">
                                     Go to top

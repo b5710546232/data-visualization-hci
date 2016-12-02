@@ -19,7 +19,9 @@
 </template>
 <script>
 import c3 from 'c3'
+import result from './csv/reviews_gender.csv'
 import TopButton from './TopButton.vue'
+console.log(result)
 export default {
     data () {
         return {}
@@ -30,10 +32,10 @@ export default {
     bindto: '#stack-bar',
      data: {
         columns: [
-            ['male', 670],
-            ['female', 273 ],
+            result[0],
+            result[1]
         ],
-        type: 'bar',
+        type: 'donut',
         groups: [
             ['male', 'female']
         ]

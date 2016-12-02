@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <Navbar id="my-navbar"></Navbar>
-    <SectionIntro :title="'We collect data since 1995-2015'" :subtitle="'of data\'s movie collection'"></SectionIntro>
-    <SectionIntro :title="'There are a 1,682 movies'" :subtitle="''"></SectionIntro>
+    <SectionIntro :title="'We have data since 1995-2015'" :subtitle="'of data\'s movie collection'"></SectionIntro>
+    <SectionIntro :title="'There are 1,682 movies'" :subtitle="''"></SectionIntro>
     <SectionPie id="movie"></SectionPie>
     <SectionStackBarChart id="reviewer"></SectionStackBarChart> <!-- -->
     <!--<SectionSplineChart></SectionSplineChart>-->
@@ -14,6 +14,7 @@
     <!--<SectionLineChart2></SectionLineChart2>-->
     <!--<SectionLineChart3></SectionLineChart3>-->
     <!--<SectionLineChart4></SectionLineChart4>-->
+    <SectionConclusion></SectionConclusion>
     <SectionReference id="reference"></SectionReference>
     <SectionMember id="member"></SectionMember>
   </div>
@@ -34,6 +35,7 @@ import SectionLineChart from './components/SectionLineChart.vue'
 import SectionLineChart2 from './components/SectionLineChart2.vue'
 import SectionLineChart3 from './components/SectionLineChart3.vue'
 import SectionLineChart4 from './components/SectionLineChart4.vue'
+import SectionConclusion from './components/SectionConclusion.vue'
 export default {
   name: 'app',
   data () {
@@ -55,7 +57,8 @@ export default {
     SectionLineChart,
     SectionLineChart2,
     SectionLineChart3,
-    SectionLineChart4
+    SectionLineChart4,
+    SectionConclusion
 
   }
 }

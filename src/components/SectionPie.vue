@@ -13,7 +13,7 @@
                     </h2>
                 </div>
                 <div class="columns is-pulled-right">
-                   <TopButton></TopButton>
+                    <TopButton></TopButton>
                 </div>
                 <!--<div id="pie"></div>-->
             </div>
@@ -22,6 +22,7 @@
 </template>
 <script>
 import c3 from 'c3'
+import {ENDPOINT} from './endpoint.js'
 import TopButton from './TopButton.vue'
 export default {
     data () {
@@ -29,6 +30,8 @@ export default {
     },
     computed: {},
     mounted () {
+          this.axios.get(ENDPOINT+'/movie_category').then((response) => {
+            let data = response.data.split('|')
         const chart = c3.generate({
             bindto: '#pie',
             data: {
@@ -58,6 +61,7 @@ export default {
             onmouseover:  (d, i)=> { console.log("onmouseover", d, i); },
             onmouseout:  (d, i) => { console.log("onmouseout", d, i); }
     }
+})
 })
     },
     methods: {},
