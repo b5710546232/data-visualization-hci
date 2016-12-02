@@ -5,7 +5,7 @@
                 <div class="heading">
                     <h1 class="title">Reviewer's Gender</h1>
                     <h2 class="subtitle">
-                        The Chart show the number of each reviewer's gender from 943.
+                        The Chart show the number of each reviewer's gender from <strong>943</strong> reviewer.
                     </h2>
                     <div id="stack-bar"></div>
                 </div>

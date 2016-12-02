@@ -95,7 +95,8 @@ d3.csv('/src/assets/flare.csv', function(d) {
 </script>
 <style scoped>
     text {
-        font: 10px sans-serif;
+        /*font: 5px sans-serif;*/
+        font-size: 1px;
         text-anchor: middle;
     }
 </style>

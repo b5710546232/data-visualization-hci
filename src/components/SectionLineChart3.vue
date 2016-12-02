@@ -5,7 +5,7 @@
                 <div class="heading">
                     <h1 class="title">Category with the average rating</h1>
                     <h2 class="subtitle">
-                        Bar chart represent the <strong>average</strong> rating of reviewer in each movie's category
+                        Line chart represent category in each years.
                     </h2>
                     <div id="line-chart-3"></div>
                 </div>

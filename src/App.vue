@@ -1,18 +1,19 @@
 <template>
   <div id="app">
     <Navbar id="my-navbar"></Navbar>
-    <SectionIntro :title="'We select 22 year'" :subtitle="'of data\'s movie collection'"></SectionIntro>
-    <SectionIntro :title="'A lot of movies'" :subtitle="'...1,682 movies'"></SectionIntro>
+    <SectionIntro :title="'We collect data since 1995-2015'" :subtitle="'of data\'s movie collection'"></SectionIntro>
+    <SectionIntro :title="'There are a 1,682 movies'" :subtitle="''"></SectionIntro>
     <SectionPie id="movie"></SectionPie>
     <SectionStackBarChart id="reviewer"></SectionStackBarChart> <!-- -->
     <!--<SectionSplineChart></SectionSplineChart>-->
-    <SectionBubble id="trend"></SectionBubble>
+    
     <SectionBarChart></SectionBarChart>
     <SectionMutiBarChart></SectionMutiBarChart>
+    <SectionBubble id="trend"></SectionBubble>
     <SectionLineChart></SectionLineChart>
-    <SectionLineChart2></SectionLineChart2>
-    <SectionLineChart3></SectionLineChart3>
-    <SectionLineChart4></SectionLineChart4>
+    <!--<SectionLineChart2></SectionLineChart2>-->
+    <!--<SectionLineChart3></SectionLineChart3>-->
+    <!--<SectionLineChart4></SectionLineChart4>-->
     <SectionReference id="reference"></SectionReference>
     <SectionMember id="member"></SectionMember>
   </div>
