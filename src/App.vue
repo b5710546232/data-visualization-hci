@@ -1,14 +1,15 @@
 <template>
   <div id="app">
     <Navbar id="my-navbar"></Navbar>
-    <SectionIntro :title="'22 year data...'" :subtitle="'of data\'s movie collection'"></SectionIntro>
-    <SectionIntro :title="'A lot of movies'" :subtitle="'1,682 movies'"></SectionIntro>
+    <SectionIntro :title="'We select 22 year'" :subtitle="'of data\'s movie collection'"></SectionIntro>
+    <SectionIntro :title="'A lot of movies'" :subtitle="'...1,682 movies'"></SectionIntro>
     <SectionPie id="movie"></SectionPie>
     <SectionStackBarChart id="reviewer"></SectionStackBarChart> <!-- -->
     <!--<SectionSplineChart></SectionSplineChart>-->
     <SectionBubble id="trend"></SectionBubble>
     <SectionBarChart></SectionBarChart>
     <SectionMutiBarChart></SectionMutiBarChart>
+    <SectionLineChart></SectionLineChart>
     <SectionReference id="reference"></SectionReference>
     <SectionMember id="member"></SectionMember>
   </div>
@@ -25,6 +26,7 @@ import Navbar from './components/Navbar.vue'
 import SectionReference from './components/SectionReference.vue'
 import SectionMember from './components/SectionMember.vue'
 import SectionMutiBarChart from './components/SectionMutiBarChart.vue'
+import SectionLineChart from './components/SectionLineChart.vue'
 export default {
   name: 'app',
   data () {
@@ -42,7 +44,8 @@ export default {
     SectionIntro,
     SectionReference,
     SectionMember,
-    SectionMutiBarChart
+    SectionMutiBarChart,
+    SectionLineChart
   }
 }
 </script>
