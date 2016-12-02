@@ -8,6 +8,9 @@
                         Pie chart show the movie of <strong>18</strong> category in percentage.
                     </h2>
                     <div id="pie"></div>
+                    <h2 class="subtitle">
+                            From 1682 movie, we can categorize in to 18 category. <strong>Drama</strong> has the most movie in all category.
+                    </h2>
                 </div>
                 <div class="columns is-pulled-right">
                    <TopButton></TopButton>

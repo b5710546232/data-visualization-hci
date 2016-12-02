@@ -8,6 +8,13 @@
                         Line chart represent category in each years.
                     </h2>
                     <div id="line-chart"></div>
+                    <h2 class="subtitle">
+                        The trend is vary in each year. People are changing their category of movie every year but the trend in the year next to each other is alike.
+                    </h2>
+                    <h2 class="subtitle">
+                        In 2015, <strong>Drama</strong> has the most trending in that year. Coming up with <strong>comedy</strong> has the second popular.</br>
+                        In 2016, we predict that the trend of movie will be <strong>Drama</strong> and <strong>Comedy</strong>.
+                    </h2>
                 </div>
                 <div class="columns is-pulled-right">
                    <TopButton></TopButton>

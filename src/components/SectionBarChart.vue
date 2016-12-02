@@ -5,9 +5,13 @@
                 <div class="heading">
                     <h1 class="title">Category with the average rating</h1>
                     <h2 class="subtitle">
-                        Bar chart represent the <strong>average</strong> rating of reviewer in each movie's category
+                        We have the data that user rate on each movie and we find the average rating in each category.
                     </h2>
                     <div id="bar-chart"></div>
+                    <h2 class="subtitle">
+                        The graph show you the average rating number of each category. All of the category has average more than 3. <strong>Film-Noir</strong> has the <strong>highest</strong> average rating with 3.9 score. 
+                        <strong>Fantasy</strong> has the <strong>lowest</strong> average rating 3.2 score.    
+                    </h2>
                 </div>
                 <div class="columns is-pulled-right">
                    <TopButton></TopButton>
