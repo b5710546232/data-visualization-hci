@@ -5,7 +5,7 @@
                 <div class="heading">
                     <h1 class="title">Movie Category</h1>
                     <h2 class="subtitle">
-                        Pie chart show the movie of each category in percentage.
+                        Pie chart show the movie of <strong>18</strong> category in percentage.
                     </h2>
                     <div id="pie"></div>
                 </div>
