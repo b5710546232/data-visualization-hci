@@ -1,0 +1,1 @@
+export const ENDPOINT = 'http://54.149.225.170:1980'
