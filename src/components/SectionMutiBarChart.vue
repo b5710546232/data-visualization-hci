@@ -8,6 +8,10 @@
                         Bar chart represent the rating of reviewer's' in each movie's category
                     </h2>
                     <div id="bar-mutichart"></div>
+                    <h2 class="subtitle">
+                        The graph separate bar between men and female. <strong>Men</strong> rate for <strong>Animation</strong> the most. <strong>Women</strong> rate for <strong>Documentary</strong> the most.
+                        Men and Women don't have the same category for their preference.
+                    </h2>
                 </div>
                 <div class="columns is-pulled-right">
                    <TopButton></TopButton>

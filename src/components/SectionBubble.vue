@@ -11,6 +11,9 @@
                         <div class="columns is-centered">
                             <svg id="bubble" width="600" height="580"></svg>
                         </div>
+                        <h2 class="subtitle">
+                            <strong>Drama</strong> has the most popular of all category. <strong>Documentory</strong> has the least popular of all category.
+                        </h2>
                     </div>
                     <div class="columns is-pulled-right">
                        <TopButton></TopButton>
